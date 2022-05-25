@@ -20,7 +20,7 @@ export default function Messenger() {
 
   //socket
   useEffect(() => {
-    socket.current = io("https://whispering-anchorage-37001.herokuapp.com/");
+    socket.current = io("https://whispering-anchorage-37001.herokuapp.com");
     socket.current.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
