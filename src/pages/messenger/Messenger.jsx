@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./messenger.css";
 import { useState, useEffect } from "react";
-
+import { useNavigate } from "react-router";
 import Message from "../../component/message/Message";
 import Conversation from "../../component/conversations/Conversation";
 import ChatOnline from "../../component/chatOnline/ChatOnline";
@@ -10,6 +10,10 @@ import { io } from "socket.io-client";
 
 export default function Messenger() {
   const user_id = localStorage.getItem("user");
+  let navigate = useNavigate();
+  if(!user_id){
+    navigate("/login");
+  }
   const [conversations, setConversation] = useState([]);
   const [currentChat, setCurrentChat] = useState("");
   const [messages, setMessages] = useState([]);
