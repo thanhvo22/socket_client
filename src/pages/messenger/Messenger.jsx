@@ -18,9 +18,12 @@ export default function Messenger() {
   const [currentChat, setCurrentChat] = useState("");
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
+  const [onlineUsers, setOnlineUsers] = useState([]);
   const socket = useRef();
   //tin nhan den
   const [arrivalMessage, setArrivalMessage] = useState("");
+  //chatAll
+  const [chatAll, setChatAll] = useState("");
 
   //socket
   useEffect(() => {
@@ -148,8 +151,12 @@ export default function Messenger() {
         </div>
         <div className="chatOnline">
           <div className="chatOnlineWrapper">
-            <ChatOnline />
-            <ChatOnline />
+          <ChatOnline
+              onlineUsers={onlineUsers}
+              currentId={user_id}
+              setCurrentChat={setCurrentChat}
+            />
+            
           </div>
         </div>
       </div>

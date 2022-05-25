@@ -39,13 +39,7 @@ export default function Register() {
               type="email"
               onChange={(e) => setEmail(e.target.value)}
             />
-            <input
-              placeholder="Name"
-              required
-              className="loginInput"
-              type="text"
-              onChange={(e) => setEmail(e.target.value)}
-            />
+            
             <button className="loginButton" type="submit">
               Register an account
             </button>
