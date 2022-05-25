@@ -25,13 +25,6 @@ export default function Conversation(conversation) {
   return (
     <div>
       <div className="conversation">
-      <img
-          className="conversationImg"
-          src="https://res.cloudinary.com/dhxlhkgog/image/upload/v1650942802/rl3tjlquwimskhybnmu7.jpg"
-        />
-        <span className="conversationName">Chat ALL</span>
-      </div>
-      <div className="conversation">
         <img
           className="conversationImg"
           src="https://res.cloudinary.com/dhxlhkgog/image/upload/v1650942802/rl3tjlquwimskhybnmu7.jpg"
