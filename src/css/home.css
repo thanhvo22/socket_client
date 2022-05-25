@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f3f4f8;
+}
+
+header {
+  display: flex;
+  background: #22242a;
+  padding: 20px;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 8px 6px -6px #a7a7a7;
+}
+
+.left_area h3 {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.left_area span {
+  color: #1dc4e7;
+}
+
+.logout_btn {
+  position: absolute;
+  right: 0px;
+  padding: 5px;
+  background-color: #19b3d3;
+  text-decoration: none;
+  margin-right: 20px;
+  border-radius: 2px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.logout_btn:hover {
+  background: #0d9dbb;
+  color: #fff;
+}
+
+.sidebar {
+  background: #2f323a;
+  width: 250px;
+  height: 100%;
+  padding-top: 20px;
+  left: 0;
+}
+
+.sidebar .profilename {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar h4 {
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  line-height: 60px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.sidebar a:hover {
+  background: #19b3d3;
+}
+
+.sidebar i {
+  padding-right: 20px;
+}
+
+label #sidebar_btn {
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  left: 200px;
+  font-size: 20px;
+  margin-top: -25px;
+}
+
+label #sidebar_btn:hover {
+  color: #19b3d3;
+}
+
+.body_layout {
+  height: 100vh;
+  display: flex;
+}
+
+.content {
+  width: 100%;
+}
