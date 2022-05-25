@@ -3,6 +3,7 @@ import "./messenger.css";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import Message from "../../component/message/Message";
+import ChatALL from "../../component/chatAll/ChatAll";
 import Conversation from "../../component/conversations/Conversation";
 import ChatOnline from "../../component/chatOnline/ChatOnline";
 import axios from "axios";
@@ -111,6 +112,7 @@ export default function Messenger() {
         <div className="chatMenu">
           <div className="chatMenuWrapper">
             <input placeholder="Search for friends" className="chatMenuInput" />
+            <ChatALL />
             {conversations.map((c) => (
               <div onClick={() => setCurrentChat(c)}>
                 <Conversation conversation={c} />
